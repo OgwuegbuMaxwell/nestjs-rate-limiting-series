@@ -1,0 +1,14 @@
+### Test home route
+GET http://localhost:3005/
+
+### Test products route
+GET http://localhost:3005/products
+
+### Test login route
+POST http://localhost:3005/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpass"
+}
