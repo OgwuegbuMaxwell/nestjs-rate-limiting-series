@@ -3,8 +3,10 @@
 
 Educational project demonstrating how to implement and extend API rate limiting in a NestJS app using the official @nestjs/throttler package.
 
+**What We’ve Built So Far (Part 1 & 2)**
 
-## What we’ve built so far (Part 1)
+
+##  Part 1 – Global Rate Limiting Setup
 
 **Global rate limiting applied to all routes**
   - We set up ThrottlerModule.forRoot() to apply a default rate limit across our entire API.
@@ -33,6 +35,29 @@ Educational project demonstrating how to implement and extend API rate limiting 
   "message": "ThrottlerException: Too Many Requests"
 }
 ```
+
+
+
+## Part 2 – Route-Level Throttling
+
+ - Introduced @Throttle() to override global limits on specific routes.
+
+ - Used @SkipThrottle() to exempt routes from being throttled.
+
+ - Demonstrated both controller-level and method-level usage with examples.
+
+
+
+## What’s Coming Next (Advanced Series – Part 3+)
+
+ - Named throttlers for advanced strategies
+
+ - Overriding and skipping named throttlers
+
+ - How @Throttle() and @SkipThrottle() work with named throttlers
+
+ - Using Redis instead of in-memory storage for production use
+
 
 
 ## How to run this project
